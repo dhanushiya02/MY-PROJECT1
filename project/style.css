@@ -1,0 +1,348 @@
+/* --- GLOBAL STYLES & RESET --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #0dcaf0;
+    --dark-blue: #0a2240;
+    --light-bg: #f8f9fa;
+    --text-muted: #6c757d;
+    --text-main: #333333;
+}
+
+body {
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* --- SECTION 1: EMERGENCY BAR --- */
+.emergency-bar {
+    background-color: #dc3545;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 10%;
+    font-size: 0.9rem;
+}
+.emergency-bar i {
+    margin-right: 5px;
+}
+
+/* --- SECTION 2: HEADER & NAVIGATION --- */
+.main-header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.logo a {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--dark-blue);
+}
+.logo span {
+    color: var(--primary-color);
+}
+.navbar a {
+    color: var(--dark-blue);
+    font-weight: 500;
+    margin-left: 25px;
+}
+.navbar a:hover, .navbar a.active {
+    color: var(--primary-color);
+}
+.navbar .btn-nav {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.navbar .btn-nav:hover {
+    background-color: var(--dark-blue);
+    color: white;
+}
+
+/* --- SECTION 3: HERO SECTION --- */
+.hero {
+    background: linear-gradient(rgba(10, 34, 64, 0.7), rgba(10, 34, 64, 0.7)), url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=1200') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    color: white;
+}
+.hero-content {
+    max-width: 600px;
+}
+.hero-content h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+.hero-content span {
+    color: var(--secondary-color);
+}
+.hero-content p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+.hero-btns a {
+    padding: 12px 28px;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-right: 15px;
+}
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+.btn-primary:hover { background-color: #0b5ed7; }
+.btn-secondary {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+.btn-secondary:hover { background-color: white; color: var(--dark-blue); }
+
+/* --- SECTION 4: QUICK ACTIONS --- */
+.quick-actions {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 10%;
+    margin-top: -50px;
+    position: relative;
+    z-index: 10;
+}
+.action-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    flex: 1;
+    text-align: center;
+    transition: transform 0.3s;
+}
+.action-card:hover { transform: translateY(-5px); }
+.action-card i {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+.color-1 i { color: #20c997; }
+.color-2 i { color: #0d6efd; }
+.color-3 i { color: #ffc107; }
+.action-card h3 { margin-bottom: 10px; color: var(--dark-blue); }
+.action-card p { color: var(--text-muted); font-size: 0.95rem; }
+
+/* --- GLOBAL SECTION TITLE --- */
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.section-title h2 {
+    font-size: 2.2rem;
+    color: var(--dark-blue);
+    margin-bottom: 10px;
+}
+.section-title p {
+    color: var(--text-muted);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* --- SECTION 5: SERVICES --- */
+.services {
+    padding: 80px 10% 40px;
+    background-color: var(--light-bg);
+}
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+.service-box {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 8px;
+    text-align: center;
+    border-bottom: 4px solid transparent;
+    transition: all 0.3s;
+}
+.service-box:hover {
+    border-bottom-color: var(--primary-color);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+.service-box i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+.service-box h3 {
+    color: var(--dark-blue);
+    margin-bottom: 10px;
+}
+.service-box p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+/* --- SECTION 6: STATS --- */
+.stats {
+    background-color: var(--dark-blue);
+    color: white;
+    padding: 60px 10%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.stat-item h2 {
+    font-size: 3rem;
+    color: var(--secondary-color);
+    margin-bottom: 5px;
+}
+
+/* --- SECTION 7: TESTIMONIALS --- */
+.testimonials {
+    padding: 80px 10%;
+}
+.testimonial-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+.testimonial-card {
+    background: var(--light-bg);
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 500px;
+}
+.testimonial-card .quote {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 15px;
+}
+.testimonial-card h4 { color: var(--dark-blue); }
+.testimonial-card span { font-size: 0.85rem; color: var(--primary-color); }
+
+/* --- SECTION 8: APPOINTMENT SECTION --- */
+.appointment-section {
+    background: linear-gradient(rgba(13, 110, 253, 0.05), rgba(13, 110, 253, 0.05)), url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=1200') no-repeat center center/cover;
+    padding: 80px 10%;
+}
+.appointment-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+.appointment-info, .appointment-form { flex: 1; }
+.appointment-info h2 { color: var(--dark-blue); margin-bottom: 15px; }
+.appointment-info ul { list-style: none; margin-top: 20px; }
+.appointment-info ul li { margin-bottom: 10px; font-weight: 500; }
+.appointment-info i { color: #20c997; margin-right: 10px; }
+
+.appointment-form h3 { margin-bottom: 20px; color: var(--dark-blue); }
+.form-group { margin-bottom: 15px; }
+.form-group input, .form-row input, .form-row select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    outline: none;
+}
+.form-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+.btn-submit {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 14px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.btn-submit:hover { background-color: var(--dark-blue); }
+
+/* --- SECTION 9: COMPULSORY COMPREHENSIVE FOOTER --- */
+.main-footer {
+    background-color: #08182b;
+    color: #a3b1cc;
+    padding: 60px 10% 20px;
+}
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+.footer-col h3, .footer-col h4 {
+    color: white;
+    margin-bottom: 20px;
+}
+.footer-about span { color: var(--secondary-color); }
+.footer-links ul { list-style: none; }
+.footer-links ul li { margin-bottom: 10px; }
+.footer-links ul li a { color: #a3b1cc; }
+.footer-links ul li a:hover { color: white; padding-left: 5px; }
+
+.footer-contact p { margin-bottom: 12px; font-size: 0.95rem; }
+.footer-contact i { color: var(--secondary-color); margin-right: 8px; }
+
+.footer-socials p { margin-bottom: 15px; font-size: 0.9rem; }
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    background-color: rgba(255,255,255,0.08);
+    color: white;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.social-icons a:hover {
+    background-color: var(--primary-color);
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 20px;
+    font-size: 0.85rem;
+}
+
+/* --- RESPONSIVE ADJUSTMENTS --- */
+@media (max-width: 992px) {
+    .main-header { padding: 20px 5%; }
+    .hero { padding: 0 5%; }
+    .quick-actions { flex-direction: column; padding: 0 5%; }
+    .appointment-wrapper { flex-direction: column; }
+    .testimonial-container { flex-direction: column; }
+}

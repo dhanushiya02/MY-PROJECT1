@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarePulse Hospital | World-Class Healthcare</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- SECTION 1: TOP ANNOUNCEMENT / EMERGENCY BAR -->
+    <div class="emergency-bar">
+        <p><i class="fa-solid fa-phone-flip"></i> <strong>24/7 Emergency Hotline:</strong> +1 (555) 999-1122</p>
+        <p><i class="fa-solid fa-location-dot"></i> 123 Health Science Blvd, Medical District</p>
+    </div>
+
+    <!-- SECTION 2: HEADER & NAVIGATION -->
+    <header class="main-header">
+        <div class="logo">
+            <a href="index.html"><i class="fa-solid fa-heart-pulse"></i> Care<span>Pulse</span></a>
+        </div>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="./services.html">Our Services</a>
+            <a href="./find-doctor.html">Find a Doctor</a>
+            <a href="./departments.html">Departments</a>
+            <a href="./about.html" class="active">About Us</a>
+            <a href="./appointment.html" class="btn-nav">Book Appointment</a>
+        </nav>
+    </header>
+
+
+    <!-- SECTION 3: HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Your Health Is Our <br><span>Highest Priority</span></h1>
+            <p>Our team of world-class medical experts and cutting-edge technology are here to provide you with the personalized care you deserve.</p>
+            <div class="hero-btns">
+                <a href="./appointment.html" class="btn-primary">Make an Appointment</a>
+                <a href="./services.html" class="btn-secondary">Explore Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: QUICK ACTIONS / FEATURES -->
+    <section class="quick-actions">
+        <div class="action-card color-1">
+            <i class="fa-solid fa-calendar-check"></i>
+            <h3>Easy Booking</h3>
+            <p>Schedule your visit online with your preferred specialist seamlessly.</p>
+        </div>
+        <div class="action-card color-2">
+            <i class="fa-solid fa-clock"></i>
+            <h3>24 Hours Service</h3>
+            <p>Our emergency and trauma care unit operates around the clock.</p>
+        </div>
+        <div class="action-card color-3">
+            <i class="fa-solid fa-user-doctor"></i>
+            <h3>Expert Doctors</h3>
+            <p>Consult with board-certified physicians and top-tier surgeons.</p>
+        </div>
+    </section>
+
+    <!-- SECTION 5: CORE MEDICAL SERVICES -->
+    <section id="services" class="services">
+        <div class="section-title">
+            <h2>Our Medical Services</h2>
+            <p>We offer comprehensive healthcare services utilizing advanced diagnostics and treatment protocols.</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-box">
+                <i class="fa-solid fa-brain"></i>
+                <h3>Neurology</h3>
+                <p>Advanced treatment for complex brain and nervous system disorders.</p>
+            </div>
+            <div class="service-box">
+                <i class="fa-solid fa-heart-pulse"></i>
+                <h3>Cardiology</h3>
+                <p>Comprehensive heart care from diagnostics to complex surgical interventions.</p>
+            </div>
+            <div class="service-box">
+                <i class="fa-solid fa-bone"></i>
+                <h3>Orthopedics</h3>
+                <p>Expert care for bones, joints, ligaments, and sports-related injuries.</p>
+            </div>
+            <div class="service-box">
+                <i class="fa-solid fa-baby"></i>
+                <h3>Pediatrics</h3>
+                <p>Gentle and specialized medical attention tailored for infants and children.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: STATS / MILESTONES -->
+    <section class="stats">
+        <div class="stat-item">
+            <h2>250+</h2>
+            <p>Expert Doctors</p>
+        </div>
+        <div class="stat-item">
+            <h2>15k+</h2>
+            <p>Successful Surgeries</p>
+        </div>
+        <div class="stat-item">
+            <h2>99%</h2>
+            <p>Patient Satisfaction</p>
+        </div>
+        <div class="stat-item">
+            <h2>50+</h2>
+            <p>Specialized Clinics</p>
+        </div>
+    </section>
+
+    <!-- SECTION 7: TESTIMONIALS -->
+    <section class="testimonials">
+        <div class="section-title">
+            <h2>What Our Patients Say</h2>
+            <p>Real experiences from people who trusted us with their health journeys.</p>
+        </div>
+        <div class="testimonial-container">
+            <div class="testimonial-card">
+                <p class="quote">"The staff at CarePulse were incredibly professional. The doctors took their time to explain my surgery procedure clearly, putting me completely at ease."</p>
+                <h4>- Sarah Jenkins</h4>
+                <span>Cardiology Patient</span>
+            </div>
+            <div class="testimonial-card">
+                <p class="quote">"World-class facilities combined with compassionate nursing care. I highly recommend their pediatric emergency team; they were brilliant with my son."</p>
+                <h4>- David Miller</h4>
+                <span>Parent</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 8: APPOINTMENT BOOKING FORM (ONE-LINE INPUT LAYOUT) -->
+    <section id="contact" class="appointment-section">
+        <div class="appointment-container-fluid">
+            <div class="appointment-header-inline">
+                <h2>Book an Appointment</h2>
+                <p>Fill out your details to quickly request a non-emergency medical consultation slot.</p>
+            </div>
+            
+            <form action="#" class="appointment-form-inline">
+                <div class="form-inline-row">
+                    <div class="inline-field">
+                        <input type="text" placeholder="Your Full Name" required>
+                    </div>
+                    <div class="inline-field">
+                        <input type="email" placeholder="Your Email Address" required>
+                    </div>
+                    <div class="inline-field">
+                        <input type="date" required>
+                    </div>
+                    <div class="inline-field">
+                        <select required>
+                            <option value="" disabled selected>Select Department</option>
+                            <option value="cardiology">Cardiology</option>
+                            <option value="neurology">Neurology</option>
+                            <option value="orthopedics">Orthopedics</option>
+                            <option value="pediatrics">Pediatrics</option>
+                        </select>
+                    </div>
+                    <div class="inline-field-btn">
+                        <button type="submit" class="btn-submit-inline">Submit Request</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- SECTION 9: FOOTER -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <!-- Col 1: Description -->
+            <div class="footer-col footer-about">
+                <h3><i class="fa-solid fa-heart-pulse"></i> Care<span>Pulse</span></h3>
+                <p>CarePulse Hospital is a trusted, multi-specialty healthcare provider. We commit to clinical excellence, patient safety, and compassionate care to improve the lives of the communities we serve.</p>
+            </div>
+            
+            <!-- Col 2: Quick Links -->
+            <div class="footer-col footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./services.html">Our Services</a></li>
+                    <li><a href="./find-doctor.html">Find a Doctor</a></li>
+                    <li><a href="./departments.html">Departments & Clinics</a></li>
+                    <li><a href="./appointment.html">Book Appointment</a></li>
+                </ul>
+            </div>
+            
+            <!-- Col 3: Address & Contact Details -->
+            <div class="footer-col footer-contact">
+                <h4>Our Location</h4>
+                <p><i class="fa-solid fa-building"></i> Main Campus: 123 Health Science Blvd, Medical District, NY 10001</p>
+                <p><i class="fa-solid fa-phone"></i> General Inquiries: +1 (555) 019-2834</p>
+                <p><i class="fa-solid fa-envelope"></i> Email: info@carepulsehospital.com</p>
+            </div>
+            
+            <!-- Col 4: Social Media Links -->
+            <div class="footer-col footer-socials">
+                <h4>Follow Us</h4>
+                <p>Stay updated with health tips and community events.</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 CarePulse Hospital. All rights reserved. | Privacy Policy</p>
+        </div>
+    </footer>
+
+</body>
+</html>
